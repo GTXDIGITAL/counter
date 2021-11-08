@@ -15,16 +15,20 @@
             <h3>Escolha a operação</h3>
             <div>
                     <button on click="somar ()">SOMA</button>
-                    <button>SUBTRAI</button>
+                    <button on click="subtrair ()">SUBTRAI</button>
             </div>
 
             <h3>Resultado</h3>
             <p>Resultado</p>
 
             <script>
-                    function somar () {document.getElementById("num1").value;
+                    function somar ()
+                    var n1 = {document.getElementById("num1").value;
+                    var n2 = {document.getElementById("num2").value;
+                    var Resultado = n1 + n2;
                     console.log(n1);
-                    
+                    console.log(n2);
+                    console.log(Resultado);
                     }   
             </script>
     </body>
