@@ -15,22 +15,37 @@
             <h4>Escolha a operação </h4>
             <b>
             <div>
-                    <button on click=" somar ()">SOMA</button>
+                    <button on click="somar ()">SOMA</button>
                     <button on click="subtrair ()">SUBTRAI</button>
             </div>
 
             <h5>Resultado</h5>
-            <p>Resultado</p>
+            <p id="result">(Resultado)</p>
 
             <script>
                     function somar () {
                     var n1 = {document.getElementById("num1").value;
                     var n2 = {document.getElementById("num2").value;
                     var Resultado = n1 + n2;
+
+                        document.getElementById("result").innerHTML = resultado
+
                     console.log(n1);
                     console.log(n2);
                     console.log(Resultado);
                     }   
+
+                    function subtrair () {
+                    var n1 = {document.getElementById("num1").value;
+                    var n2 = {document.getElementById("num2").value;
+                    var Resultado = n1 - n2;
+
+
+                    console.log(n1);
+                    console.log(n2);
+                    console.log(Resultado);
+                    }   
+
             </script>
     </body>
 
